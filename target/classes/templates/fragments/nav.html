@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="nav" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background:#1f2937;">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="/">🖥 内网自动运维平台</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="/">首页概览</a></li>
+          <li class="nav-item"><a class="nav-link" href="/assets">资产管理</a></li>
+          <li class="nav-item"><a class="nav-link" href="/discovery">网络发现</a></li>
+          <li class="nav-item"><a class="nav-link" href="/alerts/rules">告警规则</a></li>
+          <li class="nav-item"><a class="nav-link" href="/alerts/records">告警记录</a></li>
+          <li class="nav-item"><a class="nav-link" href="/alerts/mutes">静默窗口</a></li>
+          <li class="nav-item"><a class="nav-link" href="/tasks">自动化运维</a></li>
+          <li class="nav-item"><a class="nav-link" href="/tasks/executions/all">执行历史</a></li>
+          <li class="nav-item" sec:authorize="hasRole('ADMIN')"><a class="nav-link" href="/users">用户管理</a></li>
+          <li class="nav-item" sec:authorize="hasRole('ADMIN')"><a class="nav-link" href="/audit-logs">审计日志</a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/profile" sec:authentication="name">用户</a></li>
+        </ul>
+        <form th:action="@{/logout}" method="post" class="d-flex ms-2">
+          <button class="btn btn-outline-light btn-sm" type="submit">退出登录</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: ops-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root_pass_change_me}
+      MYSQL_DATABASE: ops_platform
+      MYSQL_USER: ops_user
+      MYSQL_PASSWORD: ${DB_PASSWORD:-ops_pass_change_me}
+      TZ: Asia/Shanghai
+    volumes:
+      - ops_mysql_data:/var/lib/mysql
+    ports:
+      - "13306:3306"   # 如与宿主机已有MySQL冲突，可修改左侧端口
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD:-root_pass_change_me}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build: .
+    container_name: ops-platform
+    restart: always
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_NAME: ops_platform
+      DB_USER: ops_user
+      DB_PASSWORD: ${DB_PASSWORD:-ops_pass_change_me}
+      # 生产部署请务必修改为随机16位字符串，用于加密数据库中保存的SSH密码/私钥
+      OPS_AES_SECRET: ${OPS_AES_SECRET:-OpsPlatformKey16}
+      # 告警邮件配置（可选，不填则不发邮件）
+      MAIL_HOST: ${MAIL_HOST:-}
+      MAIL_PORT: ${MAIL_PORT:-465}
+      MAIL_USERNAME: ${MAIL_USERNAME:-}
+      MAIL_PASSWORD: ${MAIL_PASSWORD:-}
+      MAIL_FROM: ${MAIL_FROM:-ops-platform@local}
+      ALERT_MAIL_TO: ${ALERT_MAIL_TO:-}
+      # 企业微信/钉钉群机器人webhook（可选）
+      ALERT_WEBHOOK_URL: ${ALERT_WEBHOOK_URL:-}
+    ports:
+      - "8080:8080"
+
+volumes:
+  ops_mysql_data:

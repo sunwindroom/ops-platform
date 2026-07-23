@@ -1,0 +1,40 @@
+body {
+  background: #f3f4f6;
+}
+
+.navbar-brand {
+  letter-spacing: 0.5px;
+}
+
+.stat-card {
+  transition: transform 0.15s ease;
+}
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+
+.table thead th {
+  font-weight: 600;
+  color: #374151;
+}
+
+.badge.level-info { background:#3b82f6; }
+.badge.level-warning { background:#f59e0b; }
+.badge.level-critical { background:#dc2626; }
+
+.card {
+  border-radius: 10px;
+}
+
+pre {
+  background:#f8f9fa;
+  padding:6px 8px;
+  border-radius:6px;
+  max-height:160px;
+  overflow:auto;
+}
+
+.btn-group .btn.active {
+  background:#1f2937;
+  color:#fff;
+}

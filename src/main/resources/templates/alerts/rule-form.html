@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>告警规则表单</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div th:replace="~{fragments/nav :: nav}"></div>
+<div class="container mt-4" style="max-width:640px;">
+  <div class="card border-0 shadow-sm">
+    <div class="card-header bg-white fw-bold">告警规则</div>
+    <div class="card-body">
+      <form th:action="@{/alerts/rules/save}" th:object="${rule}" method="post">
+        <input type="hidden" th:field="*{id}">
+        <div class="mb-3">
+          <label class="form-label">规则名称 *</label>
+          <input class="form-control" th:field="*{name}" required placeholder="如：CPU使用率过高">
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label">适用资产大类</label>
+            <select class="form-select" th:field="*{assetType}">
+              <option value="ALL">全部资产</option>
+              <option value="PHYSICAL">物理服务器</option>
+              <option value="VIRTUAL">虚拟机</option>
+              <option value="ESXI">虚拟化宿主</option>
+              <option value="NETWORK">网络设备</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">或指定单个资产ID（可选，优先生效）</label>
+            <input type="number" class="form-control" th:field="*{assetId}" placeholder="留空表示按大类匹配">
+          </div>
+        </div>
+
+        <div class="row g-3 mt-1">
+          <div class="col-md-4">
+            <label class="form-label">监控指标 *</label>
+            <select class="form-select" th:field="*{metricType}" required>
+              <option value="cpu_usage">CPU使用率</option>
+              <option value="mem_usage">内存使用率</option>
+              <option value="disk_usage">磁盘使用率</option>
+              <option value="net_in_kbps">下行流量(kbps)</option>
+              <option value="net_out_kbps">上行流量(kbps)</option>
+              <option value="load1">1分钟负载</option>
+              <option value="if_status">网络设备接口状态(1=up,2=down)</option>
+              <option value="online">在线状态(0=离线,1=在线)</option>
+              <option value="response_ms">探针响应耗时(ms)</option>
+              <option value="http_status">HTTP状态码</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">比较符 *</label>
+            <select class="form-select" th:field="*{operator}" required>
+              <option value=">=">&gt;=</option>
+              <option value=">">&gt;</option>
+              <option value="<=">&lt;=</option>
+              <option value="<">&lt;</option>
+              <option value="==">==</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">阈值 *</label>
+            <input type="number" step="0.01" class="form-control" th:field="*{threshold}" required>
+          </div>
+        </div>
+
+        <div class="row g-3 mt-1">
+          <div class="col-md-4">
+            <label class="form-label">连续满足次数</label>
+            <input type="number" class="form-control" th:field="*{consecutiveTimes}" placeholder="1">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">告警级别</label>
+            <select class="form-select" th:field="*{level}">
+              <option value="info">提示 info</option>
+              <option value="warning">警告 warning</option>
+              <option value="critical">严重 critical</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">是否启用</label>
+            <select class="form-select" th:field="*{enabled}">
+              <option th:value="true">启用</option>
+              <option th:value="false">停用</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row g-3 mt-1">
+          <div class="col-md-6">
+            <label class="form-label">邮件通知</label>
+            <select class="form-select" th:field="*{notifyEmail}">
+              <option th:value="true">发送</option>
+              <option th:value="false">不发送</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Webhook通知（企业微信/钉钉）</label>
+            <select class="form-select" th:field="*{notifyWebhook}">
+              <option th:value="true">发送</option>
+              <option th:value="false">不发送</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mt-4 d-flex gap-2">
+          <button type="submit" class="btn btn-dark">保存</button>
+          <a href="/alerts/rules" class="btn btn-outline-secondary">取消</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ops-platform
+  datasource:
+    url: jdbc:mysql://${DB_HOST:mysql}:${DB_PORT:3306}/${DB_NAME:ops_platform}?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: ${DB_USER:ops_user}
+    password: ${DB_PASSWORD:ops_pass_change_me}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      # 首次启动自动建表；生产环境稳定后建议改为 validate 并用SQL脚本管理表结构
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+    open-in-view: false
+  thymeleaf:
+    cache: false
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+  mail:
+    host: ${MAIL_HOST:}
+    port: ${MAIL_PORT:465}
+    username: ${MAIL_USERNAME:}
+    password: ${MAIL_PASSWORD:}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+
+# ------- 本平台自定义配置 -------
+ops:
+  collect:
+    # 全局采集周期（毫秒），默认60秒。资产多时可适当调大，避免SSH/SNMP并发压力
+    interval-ms: 60000
+  alert:
+    interval-ms: 60000
+  retention:
+    # 监控历史数据保留天数，超过自动清理（每天凌晨3点执行）
+    metric-days: 90
+    cron: "0 0 3 * * ?"
+  notify:
+    mail-from: ${MAIL_FROM:ops-platform@local}
+    # 告警接收邮箱，多个用英文逗号分隔；留空则不发邮件
+    mail-to: ${ALERT_MAIL_TO:}
+    # 企业微信群机器人 / 钉钉自定义机器人 webhook地址；留空则不推送
+    webhook-url: ${ALERT_WEBHOOK_URL:}
+  security:
+    # AES密钥，必须为16位字符，用于加密数据库中存储的SSH密码/私钥。
+    # 生产部署强烈建议通过环境变量 OPS_AES_SECRET 覆盖为随机值！
+    aes-secret: ${OPS_AES_SECRET:OpsPlatformKey16}
+
+logging:
+  level:
+    com.ops.platform: info

@@ -1,0 +1,6 @@
+FLUSH PRIVILEGES;
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'Clbr@Mysql2024';
+CREATE DATABASE IF NOT EXISTS ops_platform DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER IF NOT EXISTS 'ops_user'@'localhost' IDENTIFIED BY 'Clbr@Mysql2024';
+GRANT ALL PRIVILEGES ON ops_platform.* TO 'ops_user'@'localhost';
+FLUSH PRIVILEGES;

@@ -1,0 +1,940 @@
+{
+  "rootHash": "56485abcce2949818acd891b2b0606f81dc54f7ed0b33e7bb1c318a75975edc4",
+  "timestamp": 1784767903398,
+  "fileCount": 52,
+  "files": [
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\OpsPlatformApplication.java",
+      "hash": "9fa41c1a1e52c8b6947600b5a35a45b66ad62656d9d7d081c4798a23b5e4fbbe",
+      "size": 604,
+      "modified": 1784767873062.1833
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\util\\AesUtil.java",
+      "hash": "954ea06b42183447ea8c4a868f8e80fc5ed8ca91003651ab4504931e0ba2906a",
+      "size": 1719,
+      "modified": 1784767873055.1816
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\service\\AlertService.java",
+      "hash": "46bcb42dc703161dc56e0d5d1499032f6d256847afe6b53fe5fa60ddb585473b",
+      "size": 6684,
+      "modified": 1784767873069.184
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\service\\AssetService.java",
+      "hash": "c8a05851e7d655320a658c0ef2fabc03d60c81b72ad85b825a638d669c2939fb",
+      "size": 1880,
+      "modified": 1784767873068.1833
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\service\\AuditLogService.java",
+      "hash": "05a5ae611e757c0ab7d9ccf348bacc13402c5d8451f64af0406dd58d8d4d3df3",
+      "size": 1166,
+      "modified": 1784767873065.1846
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\service\\CollectService.java",
+      "hash": "11ee4c367f08eccaf19538fc28ac7e3b765518b26729562d2eec954308256efa",
+      "size": 5591,
+      "modified": 1784767873070.1836
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\service\\DataRetentionService.java",
+      "hash": "06de10a686165e9dd5a3d82610fcebb7a5bc4044ef26213d6f0a115fadff5b30",
+      "size": 1322,
+      "modified": 1784767873069.184
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\service\\DiscoveryService.java",
+      "hash": "c9fc1531e91f3c97533933c9142807fed76994bf30bfed1ae491b16fc3b90838",
+      "size": 5152,
+      "modified": 1784767873068.1833
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\service\\NotificationService.java",
+      "hash": "8f13c37060eae00730ab37a6125239fc6fa9587796a523ea09b4b4154fb43ff9",
+      "size": 3004,
+      "modified": 1784767873070.1836
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\service\\TaskExecutionService.java",
+      "hash": "7ac073ec9928d407ab9b6b34f9f851ece7ca5bd0158b5c32cd290f8439cb6baa",
+      "size": 2875,
+      "modified": 1784767873071.1892
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\service\\collector\\ProbeCollector.java",
+      "hash": "54a007d11a82ef8fcac37e5f3e1bd2743fe9804bdae4d3f42a739bd65ed9642f",
+      "size": 4280,
+      "modified": 1784767873067.1855
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\service\\collector\\SnmpCollector.java",
+      "hash": "084bb0d3d8fa7a072c5ea57a521fbf4af997721f0d2a3ced781b62f347638e33",
+      "size": 5538,
+      "modified": 1784767873066.185
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\service\\collector\\SshCollector.java",
+      "hash": "d80466ffa9b30334caffd0a8c19f1ca24ccd8ef1ba5f7c5005f0c0b42c1c830e",
+      "size": 7727,
+      "modified": 1784767873066.185
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\scheduler\\AlertScheduler.java",
+      "hash": "27d3f97edc861bd15960ca66ed80ced47694c545f09a73d883215b43f4b70821",
+      "size": 656,
+      "modified": 1784767873064.1858
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\scheduler\\CollectScheduler.java",
+      "hash": "eece35c0e530cb64b07002096d8ec07fd16262e154da843fc5406e2e3c282a9f",
+      "size": 690,
+      "modified": 1784767873062.1833
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\scheduler\\DataRetentionScheduler.java",
+      "hash": "56e2453f27eba45a746a19ed96468580f3d8d887a178cdfd9d9cbdaa5a347756",
+      "size": 570,
+      "modified": 1784767873063.183
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\scheduler\\TaskCronScheduler.java",
+      "hash": "806de75a0c536ef8071490ee763f4a95b15f95d9abf6ae385184cd68c2845cfa",
+      "size": 2229,
+      "modified": 1784767873063.183
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\repository\\AlertMuteRepository.java",
+      "hash": "bd928eb1b15a87896f77dd08c90da146bac803ff0fd7a28e16306ae195c09044",
+      "size": 337,
+      "modified": 1784767873061.1826
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\repository\\AlertRecordRepository.java",
+      "hash": "7e9d93bbab7583a939a32f90db435e064c44955281e828536399c98be69f8cce",
+      "size": 538,
+      "modified": 1784767873061.1826
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\repository\\AlertRuleRepository.java",
+      "hash": "c750cd79e96ff100e42c4d0b41ca2c2feedda66beab3945c408ec3b797287aee",
+      "size": 287,
+      "modified": 1784767873059.1821
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\repository\\AssetRepository.java",
+      "hash": "58fb595fedf8c286c9a2e1c2b4b064e19131c4a4270e1bdb862a4e0fd1e0806f",
+      "size": 374,
+      "modified": 1784767873058.1812
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\repository\\AuditLogRepository.java",
+      "hash": "ab132d37aa983aa2d2962ec3d5bfe8e3d66c92f763f7b69a99bafa46d66b84a6",
+      "size": 299,
+      "modified": 1784767873058.1812
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\repository\\MetricDataRepository.java",
+      "hash": "c1b1286d77a348d56fd011ff9a16bb4ff81b835ef564553a1d537c3b7860e4ef",
+      "size": 729,
+      "modified": 1784767873060.182
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\repository\\OpsTaskRepository.java",
+      "hash": "7f9126430262a23faf7024a22b5b094c8f0add9264dc9471043b34ffebe60ce5",
+      "size": 279,
+      "modified": 1784767873059.1821
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\repository\\SysUserRepository.java",
+      "hash": "d642fd9e8be7c7c7d53c8d98d9952617f7785cb11425aea6d05729fce783087a",
+      "size": 299,
+      "modified": 1784767873060.182
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\repository\\TaskExecutionRepository.java",
+      "hash": "eb46589fdbd763c48ffabe0e3878f406711976d6f2a86e580bbb745455026a6a",
+      "size": 389,
+      "modified": 1784767873058.1812
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\entity\\AlertMute.java",
+      "hash": "128072ddf12448fd6d1e5539339c6bcc810318ed8ae94ab299789fd2ce4031ec",
+      "size": 1050,
+      "modified": 1784767873074.184
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\entity\\AlertRecord.java",
+      "hash": "987f8251776f982370ce8816d10aed18e59d860aa33dcfc0a956daeb9a44489b",
+      "size": 1029,
+      "modified": 1784767873072.1865
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\entity\\AlertRule.java",
+      "hash": "1494742ae4752dfbfde377da2aaaccd72eac5bb0005964b13b458e6dc9fdfb5a",
+      "size": 1479,
+      "modified": 1784767873073.184
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\entity\\Asset.java",
+      "hash": "4ec3649a03f49ce88a2f56e3598fc0881bbb6e5bcb57e3d05fbc78b35933bfbb",
+      "size": 3221,
+      "modified": 1784767873073.184
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\entity\\AuditLog.java",
+      "hash": "0a8afc505413d1265ce2dada54f2c46d9d2d0535dc16c7365ce51932e22ee893",
+      "size": 851,
+      "modified": 1784767873072.1865
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\entity\\MetricData.java",
+      "hash": "23462baed4199048fdbe25f602de8ae2de349a50ff3c7ef45ddfd91e37ac73c4",
+      "size": 906,
+      "modified": 1784767873075.1836
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\entity\\OpsTask.java",
+      "hash": "36e6d2da15d3799f972bec66aaaddbfcce6e8989aec58c8df4b613f96117150b",
+      "size": 918,
+      "modified": 1784767873075.1836
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\entity\\SysUser.java",
+      "hash": "8a599d4a08f9a11ad50e34afa7c7022991c3327c2c6c0360c07cf68a3a91ee2b",
+      "size": 555,
+      "modified": 1784767873074.184
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\entity\\TaskExecution.java",
+      "hash": "ebadf6f023cdc2e9b3e613255f64e6a2cb6a77a6d7087bfd16025010a3ece957",
+      "size": 741,
+      "modified": 1784767873076.1829
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\controller\\AlertController.java",
+      "hash": "c36419947ebc057af3901ead5b4539cdf793ff3102fb20a99d4a0497920bf053",
+      "size": 3000,
+      "modified": 1784767873077.183
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\controller\\AlertMuteController.java",
+      "hash": "c6767c7b62d77caa97a216356ffa6523077389b1bdb0542bdeddad66f606d54d",
+      "size": 2033,
+      "modified": 1784767873078.1838
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\controller\\AssetController.java",
+      "hash": "c4e7ce2e7a4155fb11a3ea5ffb7340189dc25dbed51bd50b230018b8e8db215c",
+      "size": 6590,
+      "modified": 1784767873081.182
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\controller\\AuditLogController.java",
+      "hash": "b9ed70f129c824dc91faa627b3bff65aad6d0a4450d56668e7878de951e0168c",
+      "size": 793,
+      "modified": 1784767873081.182
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\controller\\AuthController.java",
+      "hash": "c9e993894738e616198b1ab4f1831f5d5bdda6fdcb9d504a613cd960c321d60c",
+      "size": 277,
+      "modified": 1784767873081.182
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\controller\\DashboardController.java",
+      "hash": "6fc22eb97ace4e7425090da38faf49e30bacfc5755d0fc12d053ccad4790e57d",
+      "size": 2663,
+      "modified": 1784767873079.1836
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\controller\\DiscoveryController.java",
+      "hash": "199b0f73cef8326ac79ee3c501a4ce751807a7ac2342273b909838b52d09053e",
+      "size": 3126,
+      "modified": 1784767873082.1824
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\controller\\MonitorController.java",
+      "hash": "9b67b3c7918817121329471a17654837b25552979d3ca98ac366849227a6bcfa",
+      "size": 2511,
+      "modified": 1784767873077.183
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\controller\\ProfileController.java",
+      "hash": "ac246a25d065519cb036b6beed38c65d731f208ccb5aa05b5a1b8db9fbcbe567",
+      "size": 2265,
+      "modified": 1784767873080.1826
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\controller\\TaskController.java",
+      "hash": "30a4e02e8540b5f9e26828ab61e56f31f8b2e44e6628245b0d4d27075bd5a99d",
+      "size": 3573,
+      "modified": 1784767873079.1836
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\controller\\UserController.java",
+      "hash": "1946862ec3ebb702d2dc591b6146b32ddb39b898259bd526f2c584d0e87fd625",
+      "size": 2453,
+      "modified": 1784767873078.1838
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\config\\AesKeyInitializer.java",
+      "hash": "145be5ebaaf1009c828b61bf433d4823f01167ddeacf143f3e8b9dc8f03a351e",
+      "size": 446,
+      "modified": 1784767873056.1814
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\config\\DataInitializer.java",
+      "hash": "825062adc4e74f97f84eed95f7c1e5d958a84526e65b696781cfb3b5ee5f2fbe",
+      "size": 1108,
+      "modified": 1784767873055.1816
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\config\\LoginAuditListener.java",
+      "hash": "04c4261048ed109d6d2bb78ebf0bdbd776fb9383f6e7fd6765ce0961f992cb04",
+      "size": 635,
+      "modified": 1784767873057.1807
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\config\\SchedulerConfig.java",
+      "hash": "c1873cbceae21f1b8d3903f718e5b3070488a0b801026573d66dff76a1f3cd99",
+      "size": 702,
+      "modified": 1784767873057.1807
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\config\\SecurityConfig.java",
+      "hash": "8fc49773e06c3cfc1f1689fe8b66580863b6e40fb1094ea27930c0ea5e24edaa",
+      "size": 1627,
+      "modified": 1784767873056.1814
+    },
+    {
+      "path": "src\\main\\java\\com\\ops\\platform\\config\\UserDetailsConfig.java",
+      "hash": "633423f1cfad9b67b1a21e039fcc4ca8ef495da11dab0bffb07a31ff4e6e8d9b",
+      "size": 1201,
+      "modified": 1784767873057.1807
+    }
+  ],
+  "tree": {
+    "hash": "56485abcce2949818acd891b2b0606f81dc54f7ed0b33e7bb1c318a75975edc4",
+    "left": {
+      "hash": "6c9d274b9600b19f601941dfb31b5303adea07995dee0a3906a1e092debf26fe",
+      "left": {
+        "hash": "f361d46da1bd9c03f6771468153576d5cfb6a9056e37992ec21ad337de131932",
+        "left": {
+          "hash": "a517a560ab66aecd36b4cba15d7bea3ce340ea6a7abf0c2d3424eea6dca5a32a",
+          "left": {
+            "hash": "d13ec25c1a15b4c29c350b0b609a685e6aa3f6bc13855de6355bd0d391902eb0",
+            "left": {
+              "hash": "e8310b9c2f9355105b98d4dc247687b735049942435b66a43dace212d3c1cc19",
+              "left": {
+                "hash": "145be5ebaaf1009c828b61bf433d4823f01167ddeacf143f3e8b9dc8f03a351e",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\config\\AesKeyInitializer.java",
+                  "hash": "145be5ebaaf1009c828b61bf433d4823f01167ddeacf143f3e8b9dc8f03a351e",
+                  "size": 446,
+                  "modified": 1784767873056.1814
+                }
+              },
+              "right": {
+                "hash": "825062adc4e74f97f84eed95f7c1e5d958a84526e65b696781cfb3b5ee5f2fbe",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\config\\DataInitializer.java",
+                  "hash": "825062adc4e74f97f84eed95f7c1e5d958a84526e65b696781cfb3b5ee5f2fbe",
+                  "size": 1108,
+                  "modified": 1784767873055.1816
+                }
+              }
+            },
+            "right": {
+              "hash": "d7432dabf519122ed0fbfe279ffcdca734abf9d0f749bbc043dbbe2126d69faf",
+              "left": {
+                "hash": "04c4261048ed109d6d2bb78ebf0bdbd776fb9383f6e7fd6765ce0961f992cb04",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\config\\LoginAuditListener.java",
+                  "hash": "04c4261048ed109d6d2bb78ebf0bdbd776fb9383f6e7fd6765ce0961f992cb04",
+                  "size": 635,
+                  "modified": 1784767873057.1807
+                }
+              },
+              "right": {
+                "hash": "c1873cbceae21f1b8d3903f718e5b3070488a0b801026573d66dff76a1f3cd99",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\config\\SchedulerConfig.java",
+                  "hash": "c1873cbceae21f1b8d3903f718e5b3070488a0b801026573d66dff76a1f3cd99",
+                  "size": 702,
+                  "modified": 1784767873057.1807
+                }
+              }
+            }
+          },
+          "right": {
+            "hash": "008a0f8c48089c813d6057272bc407bd614b7a19298e519641d900770773f6e5",
+            "left": {
+              "hash": "9f5644be367380e0d51750f910b761c2c268ee512047b9a8991d6bd40a6670a0",
+              "left": {
+                "hash": "8fc49773e06c3cfc1f1689fe8b66580863b6e40fb1094ea27930c0ea5e24edaa",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\config\\SecurityConfig.java",
+                  "hash": "8fc49773e06c3cfc1f1689fe8b66580863b6e40fb1094ea27930c0ea5e24edaa",
+                  "size": 1627,
+                  "modified": 1784767873056.1814
+                }
+              },
+              "right": {
+                "hash": "633423f1cfad9b67b1a21e039fcc4ca8ef495da11dab0bffb07a31ff4e6e8d9b",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\config\\UserDetailsConfig.java",
+                  "hash": "633423f1cfad9b67b1a21e039fcc4ca8ef495da11dab0bffb07a31ff4e6e8d9b",
+                  "size": 1201,
+                  "modified": 1784767873057.1807
+                }
+              }
+            },
+            "right": {
+              "hash": "5db1f5688a19bb442864ff43882722d8e7660c83dc462be4b313529c2004904f",
+              "left": {
+                "hash": "c36419947ebc057af3901ead5b4539cdf793ff3102fb20a99d4a0497920bf053",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\controller\\AlertController.java",
+                  "hash": "c36419947ebc057af3901ead5b4539cdf793ff3102fb20a99d4a0497920bf053",
+                  "size": 3000,
+                  "modified": 1784767873077.183
+                }
+              },
+              "right": {
+                "hash": "c6767c7b62d77caa97a216356ffa6523077389b1bdb0542bdeddad66f606d54d",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\controller\\AlertMuteController.java",
+                  "hash": "c6767c7b62d77caa97a216356ffa6523077389b1bdb0542bdeddad66f606d54d",
+                  "size": 2033,
+                  "modified": 1784767873078.1838
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "hash": "49825d2fa4534a6eac6578f3269038c376043847f3e914ec362d75ebe97c3cec",
+          "left": {
+            "hash": "a7ec49a4ce0e9558cbfc250612e4485913c71774049ed826e7f378fb3ded5ea8",
+            "left": {
+              "hash": "88d056183428b1a26f57eb72303d909012270a804b566e58df7bf5212146053d",
+              "left": {
+                "hash": "c4e7ce2e7a4155fb11a3ea5ffb7340189dc25dbed51bd50b230018b8e8db215c",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\controller\\AssetController.java",
+                  "hash": "c4e7ce2e7a4155fb11a3ea5ffb7340189dc25dbed51bd50b230018b8e8db215c",
+                  "size": 6590,
+                  "modified": 1784767873081.182
+                }
+              },
+              "right": {
+                "hash": "b9ed70f129c824dc91faa627b3bff65aad6d0a4450d56668e7878de951e0168c",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\controller\\AuditLogController.java",
+                  "hash": "b9ed70f129c824dc91faa627b3bff65aad6d0a4450d56668e7878de951e0168c",
+                  "size": 793,
+                  "modified": 1784767873081.182
+                }
+              }
+            },
+            "right": {
+              "hash": "674ac64cef78355b9612521db9788f8e786a58abbeba3db24c72f3fae7ee430e",
+              "left": {
+                "hash": "c9e993894738e616198b1ab4f1831f5d5bdda6fdcb9d504a613cd960c321d60c",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\controller\\AuthController.java",
+                  "hash": "c9e993894738e616198b1ab4f1831f5d5bdda6fdcb9d504a613cd960c321d60c",
+                  "size": 277,
+                  "modified": 1784767873081.182
+                }
+              },
+              "right": {
+                "hash": "6fc22eb97ace4e7425090da38faf49e30bacfc5755d0fc12d053ccad4790e57d",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\controller\\DashboardController.java",
+                  "hash": "6fc22eb97ace4e7425090da38faf49e30bacfc5755d0fc12d053ccad4790e57d",
+                  "size": 2663,
+                  "modified": 1784767873079.1836
+                }
+              }
+            }
+          },
+          "right": {
+            "hash": "1e93dcc2e3132e4204868870479a72b17359870935029931076e607aa05b90a3",
+            "left": {
+              "hash": "151d28e43b560a72c314c8b7d33e357213d119e14082418cc369fd9941558ec3",
+              "left": {
+                "hash": "199b0f73cef8326ac79ee3c501a4ce751807a7ac2342273b909838b52d09053e",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\controller\\DiscoveryController.java",
+                  "hash": "199b0f73cef8326ac79ee3c501a4ce751807a7ac2342273b909838b52d09053e",
+                  "size": 3126,
+                  "modified": 1784767873082.1824
+                }
+              },
+              "right": {
+                "hash": "9b67b3c7918817121329471a17654837b25552979d3ca98ac366849227a6bcfa",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\controller\\MonitorController.java",
+                  "hash": "9b67b3c7918817121329471a17654837b25552979d3ca98ac366849227a6bcfa",
+                  "size": 2511,
+                  "modified": 1784767873077.183
+                }
+              }
+            },
+            "right": {
+              "hash": "1d2fa9642f5b344d70eaa4b3e976fe309778c4aaaed2d2251d31b2c1a968bd7c",
+              "left": {
+                "hash": "ac246a25d065519cb036b6beed38c65d731f208ccb5aa05b5a1b8db9fbcbe567",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\controller\\ProfileController.java",
+                  "hash": "ac246a25d065519cb036b6beed38c65d731f208ccb5aa05b5a1b8db9fbcbe567",
+                  "size": 2265,
+                  "modified": 1784767873080.1826
+                }
+              },
+              "right": {
+                "hash": "30a4e02e8540b5f9e26828ab61e56f31f8b2e44e6628245b0d4d27075bd5a99d",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\controller\\TaskController.java",
+                  "hash": "30a4e02e8540b5f9e26828ab61e56f31f8b2e44e6628245b0d4d27075bd5a99d",
+                  "size": 3573,
+                  "modified": 1784767873079.1836
+                }
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "hash": "ce49e15895b5c2284a6cf9197f7a8f0fe1c97f55cd1e31374d67123b99166096",
+        "left": {
+          "hash": "c835bbb71247fa6a36dda68aa9fe0ce2e1ef7c75c1eed8c7b9f0ebf072a56cee",
+          "left": {
+            "hash": "6eecf27c9d5f712e13585d83cc66121a7bb6e5ab5a156326b8215a4f3cee8720",
+            "left": {
+              "hash": "6a9b9f59ff4ddff474d234255290c8bb202ba76ba5e9c25e66a8194a5d875cda",
+              "left": {
+                "hash": "1946862ec3ebb702d2dc591b6146b32ddb39b898259bd526f2c584d0e87fd625",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\controller\\UserController.java",
+                  "hash": "1946862ec3ebb702d2dc591b6146b32ddb39b898259bd526f2c584d0e87fd625",
+                  "size": 2453,
+                  "modified": 1784767873078.1838
+                }
+              },
+              "right": {
+                "hash": "128072ddf12448fd6d1e5539339c6bcc810318ed8ae94ab299789fd2ce4031ec",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\entity\\AlertMute.java",
+                  "hash": "128072ddf12448fd6d1e5539339c6bcc810318ed8ae94ab299789fd2ce4031ec",
+                  "size": 1050,
+                  "modified": 1784767873074.184
+                }
+              }
+            },
+            "right": {
+              "hash": "d0b00798b4e2ef7aaaf39949f2e289b4826559bf88b8e472c978ada7a65e59c4",
+              "left": {
+                "hash": "987f8251776f982370ce8816d10aed18e59d860aa33dcfc0a956daeb9a44489b",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\entity\\AlertRecord.java",
+                  "hash": "987f8251776f982370ce8816d10aed18e59d860aa33dcfc0a956daeb9a44489b",
+                  "size": 1029,
+                  "modified": 1784767873072.1865
+                }
+              },
+              "right": {
+                "hash": "1494742ae4752dfbfde377da2aaaccd72eac5bb0005964b13b458e6dc9fdfb5a",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\entity\\AlertRule.java",
+                  "hash": "1494742ae4752dfbfde377da2aaaccd72eac5bb0005964b13b458e6dc9fdfb5a",
+                  "size": 1479,
+                  "modified": 1784767873073.184
+                }
+              }
+            }
+          },
+          "right": {
+            "hash": "d6aa0a6c89802d8b293850772983ff3b7002e9b51a07c9d5bcb8269a67820683",
+            "left": {
+              "hash": "76d614e4dd66b9dd8ddeeb52a2fa085f3b4d10aaddfdda4a7e8e9aff3f854931",
+              "left": {
+                "hash": "4ec3649a03f49ce88a2f56e3598fc0881bbb6e5bcb57e3d05fbc78b35933bfbb",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\entity\\Asset.java",
+                  "hash": "4ec3649a03f49ce88a2f56e3598fc0881bbb6e5bcb57e3d05fbc78b35933bfbb",
+                  "size": 3221,
+                  "modified": 1784767873073.184
+                }
+              },
+              "right": {
+                "hash": "0a8afc505413d1265ce2dada54f2c46d9d2d0535dc16c7365ce51932e22ee893",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\entity\\AuditLog.java",
+                  "hash": "0a8afc505413d1265ce2dada54f2c46d9d2d0535dc16c7365ce51932e22ee893",
+                  "size": 851,
+                  "modified": 1784767873072.1865
+                }
+              }
+            },
+            "right": {
+              "hash": "0a0cae35430c8ae6099944c3c99ad947a8a9446b58f64df874a4d07795db142a",
+              "left": {
+                "hash": "23462baed4199048fdbe25f602de8ae2de349a50ff3c7ef45ddfd91e37ac73c4",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\entity\\MetricData.java",
+                  "hash": "23462baed4199048fdbe25f602de8ae2de349a50ff3c7ef45ddfd91e37ac73c4",
+                  "size": 906,
+                  "modified": 1784767873075.1836
+                }
+              },
+              "right": {
+                "hash": "36e6d2da15d3799f972bec66aaaddbfcce6e8989aec58c8df4b613f96117150b",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\entity\\OpsTask.java",
+                  "hash": "36e6d2da15d3799f972bec66aaaddbfcce6e8989aec58c8df4b613f96117150b",
+                  "size": 918,
+                  "modified": 1784767873075.1836
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "hash": "511859d2a59b26490133107823939cb674072c0b37eeeefa9ee27a19d7c059fc",
+          "left": {
+            "hash": "5a41497068ade889783f2db66422ddc9c84058630828853a45d5f253a446e535",
+            "left": {
+              "hash": "b24e735708ad7ceceb463f6fdb2be63b4d886a1a3a583679be7e700c56cd01c5",
+              "left": {
+                "hash": "8a599d4a08f9a11ad50e34afa7c7022991c3327c2c6c0360c07cf68a3a91ee2b",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\entity\\SysUser.java",
+                  "hash": "8a599d4a08f9a11ad50e34afa7c7022991c3327c2c6c0360c07cf68a3a91ee2b",
+                  "size": 555,
+                  "modified": 1784767873074.184
+                }
+              },
+              "right": {
+                "hash": "ebadf6f023cdc2e9b3e613255f64e6a2cb6a77a6d7087bfd16025010a3ece957",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\entity\\TaskExecution.java",
+                  "hash": "ebadf6f023cdc2e9b3e613255f64e6a2cb6a77a6d7087bfd16025010a3ece957",
+                  "size": 741,
+                  "modified": 1784767873076.1829
+                }
+              }
+            },
+            "right": {
+              "hash": "bfba064f2b96815089bca62ee583d70774c848a163e2be2026e18b876facbc3c",
+              "left": {
+                "hash": "9fa41c1a1e52c8b6947600b5a35a45b66ad62656d9d7d081c4798a23b5e4fbbe",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\OpsPlatformApplication.java",
+                  "hash": "9fa41c1a1e52c8b6947600b5a35a45b66ad62656d9d7d081c4798a23b5e4fbbe",
+                  "size": 604,
+                  "modified": 1784767873062.1833
+                }
+              },
+              "right": {
+                "hash": "bd928eb1b15a87896f77dd08c90da146bac803ff0fd7a28e16306ae195c09044",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\repository\\AlertMuteRepository.java",
+                  "hash": "bd928eb1b15a87896f77dd08c90da146bac803ff0fd7a28e16306ae195c09044",
+                  "size": 337,
+                  "modified": 1784767873061.1826
+                }
+              }
+            }
+          },
+          "right": {
+            "hash": "9ee68af4ab199ca8d90201413d293e3531b08c81c770417328901c581f8fd5ac",
+            "left": {
+              "hash": "ad55813535130e61db867f3d9c5cfa2bfedd8735ff01e4a71ffc1147908622a7",
+              "left": {
+                "hash": "7e9d93bbab7583a939a32f90db435e064c44955281e828536399c98be69f8cce",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\repository\\AlertRecordRepository.java",
+                  "hash": "7e9d93bbab7583a939a32f90db435e064c44955281e828536399c98be69f8cce",
+                  "size": 538,
+                  "modified": 1784767873061.1826
+                }
+              },
+              "right": {
+                "hash": "c750cd79e96ff100e42c4d0b41ca2c2feedda66beab3945c408ec3b797287aee",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\repository\\AlertRuleRepository.java",
+                  "hash": "c750cd79e96ff100e42c4d0b41ca2c2feedda66beab3945c408ec3b797287aee",
+                  "size": 287,
+                  "modified": 1784767873059.1821
+                }
+              }
+            },
+            "right": {
+              "hash": "30d348785755c3ef12096c266613e949d0860874c910b3c00e54b3abe90ff141",
+              "left": {
+                "hash": "58fb595fedf8c286c9a2e1c2b4b064e19131c4a4270e1bdb862a4e0fd1e0806f",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\repository\\AssetRepository.java",
+                  "hash": "58fb595fedf8c286c9a2e1c2b4b064e19131c4a4270e1bdb862a4e0fd1e0806f",
+                  "size": 374,
+                  "modified": 1784767873058.1812
+                }
+              },
+              "right": {
+                "hash": "ab132d37aa983aa2d2962ec3d5bfe8e3d66c92f763f7b69a99bafa46d66b84a6",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\repository\\AuditLogRepository.java",
+                  "hash": "ab132d37aa983aa2d2962ec3d5bfe8e3d66c92f763f7b69a99bafa46d66b84a6",
+                  "size": 299,
+                  "modified": 1784767873058.1812
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "right": {
+      "hash": "7bda16296d775483071e4238fd21653551337a17609f24fedde648186cd1a6a8",
+      "left": {
+        "hash": "b71d959d2449e550de8e42eb8b0526d5fdeff2c7f45df478d7606f107c17ed58",
+        "left": {
+          "hash": "58a5d1e34ee92ef0510abc1b6ec000d12698910aeaaa67b5b2c91507547eb3d3",
+          "left": {
+            "hash": "65d22ac452909a8b2c998f9967e4218d03c19a4094d998fd0fe119027f4ff056",
+            "left": {
+              "hash": "1d9cbc5d90ca4e67c5c4559a6096ac4607a982d043d5f25c2b92558a555ae298",
+              "left": {
+                "hash": "c1b1286d77a348d56fd011ff9a16bb4ff81b835ef564553a1d537c3b7860e4ef",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\repository\\MetricDataRepository.java",
+                  "hash": "c1b1286d77a348d56fd011ff9a16bb4ff81b835ef564553a1d537c3b7860e4ef",
+                  "size": 729,
+                  "modified": 1784767873060.182
+                }
+              },
+              "right": {
+                "hash": "7f9126430262a23faf7024a22b5b094c8f0add9264dc9471043b34ffebe60ce5",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\repository\\OpsTaskRepository.java",
+                  "hash": "7f9126430262a23faf7024a22b5b094c8f0add9264dc9471043b34ffebe60ce5",
+                  "size": 279,
+                  "modified": 1784767873059.1821
+                }
+              }
+            },
+            "right": {
+              "hash": "69b4c2a87267aabfaf39eee124ddd2da95d520c303d6d85baddbdcf18632d3d0",
+              "left": {
+                "hash": "d642fd9e8be7c7c7d53c8d98d9952617f7785cb11425aea6d05729fce783087a",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\repository\\SysUserRepository.java",
+                  "hash": "d642fd9e8be7c7c7d53c8d98d9952617f7785cb11425aea6d05729fce783087a",
+                  "size": 299,
+                  "modified": 1784767873060.182
+                }
+              },
+              "right": {
+                "hash": "eb46589fdbd763c48ffabe0e3878f406711976d6f2a86e580bbb745455026a6a",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\repository\\TaskExecutionRepository.java",
+                  "hash": "eb46589fdbd763c48ffabe0e3878f406711976d6f2a86e580bbb745455026a6a",
+                  "size": 389,
+                  "modified": 1784767873058.1812
+                }
+              }
+            }
+          },
+          "right": {
+            "hash": "deb3408262bf9848701b04dfccc3849f4a49ee199f8a0dec33c1e1d782814d57",
+            "left": {
+              "hash": "bbb83de519fcf9a6153db21ca716d292e34608fb8d2a26eaf1c2a03790ed8f85",
+              "left": {
+                "hash": "27d3f97edc861bd15960ca66ed80ced47694c545f09a73d883215b43f4b70821",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\scheduler\\AlertScheduler.java",
+                  "hash": "27d3f97edc861bd15960ca66ed80ced47694c545f09a73d883215b43f4b70821",
+                  "size": 656,
+                  "modified": 1784767873064.1858
+                }
+              },
+              "right": {
+                "hash": "eece35c0e530cb64b07002096d8ec07fd16262e154da843fc5406e2e3c282a9f",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\scheduler\\CollectScheduler.java",
+                  "hash": "eece35c0e530cb64b07002096d8ec07fd16262e154da843fc5406e2e3c282a9f",
+                  "size": 690,
+                  "modified": 1784767873062.1833
+                }
+              }
+            },
+            "right": {
+              "hash": "f2a085dc66f65704aa31961886710f5997e1da3cd142bdc49dc5d2686b0bfb4e",
+              "left": {
+                "hash": "56e2453f27eba45a746a19ed96468580f3d8d887a178cdfd9d9cbdaa5a347756",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\scheduler\\DataRetentionScheduler.java",
+                  "hash": "56e2453f27eba45a746a19ed96468580f3d8d887a178cdfd9d9cbdaa5a347756",
+                  "size": 570,
+                  "modified": 1784767873063.183
+                }
+              },
+              "right": {
+                "hash": "806de75a0c536ef8071490ee763f4a95b15f95d9abf6ae385184cd68c2845cfa",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\scheduler\\TaskCronScheduler.java",
+                  "hash": "806de75a0c536ef8071490ee763f4a95b15f95d9abf6ae385184cd68c2845cfa",
+                  "size": 2229,
+                  "modified": 1784767873063.183
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "hash": "8d8994fa618118425db1ddd26daafd3006f33c2ab67ec833545f0dbebddadcc0",
+          "left": {
+            "hash": "b5804c6eac920aec28264ac911fe2f7520b1d9cd0a6de8833ecd30abee8d31cd",
+            "left": {
+              "hash": "5e06bc61f95d92f2017ae0842443d41ebb512ae42b184acee561fc5af6bde6cb",
+              "left": {
+                "hash": "46bcb42dc703161dc56e0d5d1499032f6d256847afe6b53fe5fa60ddb585473b",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\service\\AlertService.java",
+                  "hash": "46bcb42dc703161dc56e0d5d1499032f6d256847afe6b53fe5fa60ddb585473b",
+                  "size": 6684,
+                  "modified": 1784767873069.184
+                }
+              },
+              "right": {
+                "hash": "c8a05851e7d655320a658c0ef2fabc03d60c81b72ad85b825a638d669c2939fb",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\service\\AssetService.java",
+                  "hash": "c8a05851e7d655320a658c0ef2fabc03d60c81b72ad85b825a638d669c2939fb",
+                  "size": 1880,
+                  "modified": 1784767873068.1833
+                }
+              }
+            },
+            "right": {
+              "hash": "622b06d40f496bccea63bd726deb5142285fd3993d9aa5ed56aaf80876b1a7a6",
+              "left": {
+                "hash": "05a5ae611e757c0ab7d9ccf348bacc13402c5d8451f64af0406dd58d8d4d3df3",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\service\\AuditLogService.java",
+                  "hash": "05a5ae611e757c0ab7d9ccf348bacc13402c5d8451f64af0406dd58d8d4d3df3",
+                  "size": 1166,
+                  "modified": 1784767873065.1846
+                }
+              },
+              "right": {
+                "hash": "54a007d11a82ef8fcac37e5f3e1bd2743fe9804bdae4d3f42a739bd65ed9642f",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\service\\collector\\ProbeCollector.java",
+                  "hash": "54a007d11a82ef8fcac37e5f3e1bd2743fe9804bdae4d3f42a739bd65ed9642f",
+                  "size": 4280,
+                  "modified": 1784767873067.1855
+                }
+              }
+            }
+          },
+          "right": {
+            "hash": "a8e5a9b988906791ac080e1d380aecf62710dd768d1ff0810893605f74c0c17a",
+            "left": {
+              "hash": "36200fd4343c90a78e3535918ceeae7a4e359ce003e445576e306128606588d0",
+              "left": {
+                "hash": "084bb0d3d8fa7a072c5ea57a521fbf4af997721f0d2a3ced781b62f347638e33",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\service\\collector\\SnmpCollector.java",
+                  "hash": "084bb0d3d8fa7a072c5ea57a521fbf4af997721f0d2a3ced781b62f347638e33",
+                  "size": 5538,
+                  "modified": 1784767873066.185
+                }
+              },
+              "right": {
+                "hash": "d80466ffa9b30334caffd0a8c19f1ca24ccd8ef1ba5f7c5005f0c0b42c1c830e",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\service\\collector\\SshCollector.java",
+                  "hash": "d80466ffa9b30334caffd0a8c19f1ca24ccd8ef1ba5f7c5005f0c0b42c1c830e",
+                  "size": 7727,
+                  "modified": 1784767873066.185
+                }
+              }
+            },
+            "right": {
+              "hash": "f05fcc87bc9f388c08cdf06c861c6ec22aae41f9f74c6c11fe7a516d99e08a00",
+              "left": {
+                "hash": "11ee4c367f08eccaf19538fc28ac7e3b765518b26729562d2eec954308256efa",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\service\\CollectService.java",
+                  "hash": "11ee4c367f08eccaf19538fc28ac7e3b765518b26729562d2eec954308256efa",
+                  "size": 5591,
+                  "modified": 1784767873070.1836
+                }
+              },
+              "right": {
+                "hash": "06de10a686165e9dd5a3d82610fcebb7a5bc4044ef26213d6f0a115fadff5b30",
+                "file": {
+                  "path": "src\\main\\java\\com\\ops\\platform\\service\\DataRetentionService.java",
+                  "hash": "06de10a686165e9dd5a3d82610fcebb7a5bc4044ef26213d6f0a115fadff5b30",
+                  "size": 1322,
+                  "modified": 1784767873069.184
+                }
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "hash": "a00d686ff9225503d91b40ecb04b849cf6228910c4b78dee949c961fb1fd0047",
+        "left": {
+          "hash": "a802ce39b3b7f39fd2cf8527930da9fb37e8351389141caec06690be462b13f1",
+          "left": {
+            "hash": "c9fc1531e91f3c97533933c9142807fed76994bf30bfed1ae491b16fc3b90838",
+            "file": {
+              "path": "src\\main\\java\\com\\ops\\platform\\service\\DiscoveryService.java",
+              "hash": "c9fc1531e91f3c97533933c9142807fed76994bf30bfed1ae491b16fc3b90838",
+              "size": 5152,
+              "modified": 1784767873068.1833
+            }
+          },
+          "right": {
+            "hash": "8f13c37060eae00730ab37a6125239fc6fa9587796a523ea09b4b4154fb43ff9",
+            "file": {
+              "path": "src\\main\\java\\com\\ops\\platform\\service\\NotificationService.java",
+              "hash": "8f13c37060eae00730ab37a6125239fc6fa9587796a523ea09b4b4154fb43ff9",
+              "size": 3004,
+              "modified": 1784767873070.1836
+            }
+          }
+        },
+        "right": {
+          "hash": "7c29750932b284e0a0dbcb00bf3edf9e5ad3470d8deb698918648ff574837cc3",
+          "left": {
+            "hash": "7ac073ec9928d407ab9b6b34f9f851ece7ca5bd0158b5c32cd290f8439cb6baa",
+            "file": {
+              "path": "src\\main\\java\\com\\ops\\platform\\service\\TaskExecutionService.java",
+              "hash": "7ac073ec9928d407ab9b6b34f9f851ece7ca5bd0158b5c32cd290f8439cb6baa",
+              "size": 2875,
+              "modified": 1784767873071.1892
+            }
+          },
+          "right": {
+            "hash": "954ea06b42183447ea8c4a868f8e80fc5ed8ca91003651ab4504931e0ba2906a",
+            "file": {
+              "path": "src\\main\\java\\com\\ops\\platform\\util\\AesUtil.java",
+              "hash": "954ea06b42183447ea8c4a868f8e80fc5ed8ca91003651ab4504931e0ba2906a",
+              "size": 1719,
+              "modified": 1784767873055.1816
+            }
+          }
+        }
+      }
+    }
+  }
+}

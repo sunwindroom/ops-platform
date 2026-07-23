@@ -1,0 +1,1 @@
+ALTER TABLE login_histories MODIFY COLUMN type varchar(20) NOT NULL DEFAULT 'default';

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>批量导入资产</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div th:replace="~{fragments/nav :: nav}"></div>
+<div class="container mt-4" style="max-width:720px;">
+  <div class="card border-0 shadow-sm">
+    <div class="card-header bg-white fw-bold">CSV批量导入资产</div>
+    <div class="card-body">
+      <p class="text-muted small">
+        CSV表头需为：<code>name,ip,type,category,collectMethod,sshPort,sshUser,rawSshPassword,snmpCommunity</code><br>
+        其中 <code>type</code> 取值：PHYSICAL/VIRTUAL/ESXI/NETWORK；<code>category</code> 取值参考资产表单中的细分类别下拉框；
+        <code>collectMethod</code> 取值 SSH/SNMP/NONE。未填写的列使用默认值，密码列会自动加密存储。
+      </p>
+      <div class="mb-3">
+        <a href="#" onclick="downloadTemplate();return false;">下载CSV模板</a>
+      </div>
+      <div class="mb-3">
+        <input type="file" class="form-control" id="csvFile" accept=".csv">
+      </div>
+      <button class="btn btn-dark" onclick="doImport()">开始导入</button>
+      <div id="result" class="mt-3"></div>
+    </div>
+  </div>
+</div>
+<script>
+function downloadTemplate() {
+  const content = "name,ip,type,category,collectMethod,sshPort,sshUser,rawSshPassword,snmpCommunity\n" +
+    "web-server-01,192.168.1.10,PHYSICAL,physical_server,SSH,22,root,YourPassword,\n" +
+    "switch-core,192.168.1.1,NETWORK,switch,SNMP,,,,public\n";
+  const blob = new Blob([content], {type: 'text/csv;charset=utf-8;'});
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = 'asset-import-template.csv';
+  link.click();
+}
+
+function doImport() {
+  const fileInput = document.getElementById('csvFile');
+  if (!fileInput.files.length) { alert('请先选择CSV文件'); return; }
+  const formData = new FormData();
+  formData.append('file', fileInput.files[0]);
+  fetch('/assets/import', {method: 'POST', body: formData})
+    .then(r => r.json())
+    .then(d => {
+      if (!d.success) {
+        document.getElementById('result').innerHTML = `<div class="alert alert-danger">${d.message}</div>`;
+        return;
+      }
+      let html = `<div class="alert alert-success">成功导入 ${d.imported} 条，失败 ${d.failed} 条</div>`;
+      if (d.errors && d.errors.length) {
+        html += '<ul class="text-danger small">' + d.errors.map(e => `<li>${e}</li>`).join('') + '</ul>';
+      }
+      document.getElementById('result').innerHTML = html;
+    });
+}
+</script>
+</body>
+</html>
